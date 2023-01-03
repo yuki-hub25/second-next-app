@@ -96,9 +96,6 @@ export default function Home() {
 
                 </div>
             </div>
-
-        <div className={styles.bigbrock}>    
-
                 <div className={styles.about} id="about">
                     <div className={styles.container}>
                         <div className={styles.profile}>
@@ -227,7 +224,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </div> 
 
             <footer className={styles.footer}>
                 <div className={styles.container}>

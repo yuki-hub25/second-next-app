@@ -17,7 +17,7 @@ export default function Home() {
         setNavIsOpen((prev) => !prev)
     }
     const closeNav = () => {
-        setNavIsOpen(false) 
+        setNavIsOpen(false)
     }
 
     return (
@@ -28,13 +28,13 @@ export default function Home() {
                 <meta name="viewport" content="width=320, initial-scale=1.0" />
                 <title>portfolio</title>
             </Head>
+
             <header className={styles.header}>
                 <div className={styles.container}>
                     <div>
                         <div className={styles.headerlogo}>
                             <Link href="/"><Image src={LOGO} alt="logo" /></Link>
                         </div>
-
                         <div className={styles.headermenu}>
                             <ul className={styles.menu}>
                                 <li><Link href="./#about">ABOUT</Link></li>
@@ -46,40 +46,39 @@ export default function Home() {
                     </div>
                 </div>
                 <nav className={navIsOpen ? styles.open : styles.close}>
+                    <button className={styles.btn} onClick={toggleNav}>
+                        <span className={styles.bar}></span>
+                        <span className={styles.srOnly}>MENU</span>
+                    </button>
 
-<button className={styles.btn} onClick={toggleNav}>
-    <span className={styles.bar}></span>
-    <span className={styles.srOnly}>MENU</span>
-</button>
+                    <ul className={styles.list}>
+                        <li className={styles.menuall}>
+                            <h2><span className={styles.spanborder}>MENU</span></h2>
+                        </li>
+                        <li>
+                            <Link href="./#about" className={styles.LinkMenu} onClick={closeNav}>
+                                ＞ ABOUT
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="./#skills" className={styles.LinkMenu} onClick={closeNav}>
+                                ＞ SKILLS
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="./#works" className={styles.LinkMenu} onClick={closeNav}>
+                                ＞ WORKS
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="./contact" className={styles.LinkMenu} onClick={closeNav}>
+                                ＞ CONTACT
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
 
-<ul className={styles.list}>
-    <li className={styles.menuall}>
-        <h2><span className={styles.spanborder}>MENU</span></h2>
-    </li>
-    <li>
-        <Link href="./#about" className={styles.LinkMenu} onClick={closeNav}>
-            ＞ ABOUT
-        </Link>
-    </li>
-    <li>
-        <Link href="./#skills" className={styles.LinkMenu} onClick={closeNav}>
-            ＞ SKILLS
-        </Link>
-    </li>
-    <li>
-        <Link href="./#works" className={styles.LinkMenu} onClick={closeNav}>
-            ＞ WORKS
-        </Link>
-    </li>
-    <li>
-        <Link href="./contact" className={styles.LinkMenu} onClick={closeNav}>
-            ＞ CONTACT
-        </Link>
-    </li>
-</ul>
-</nav>
-
-</header>
+            </header>
             <div className={styles.contact}>
                 <div className={styles.container}>
                     <div className={styles.contactwrapper}>
@@ -106,15 +105,11 @@ export default function Home() {
                                     ※現在こちらのフォームは停止しております</p>
 
                                 <input className={styles.formbtn} type="submit" value="送信する" />
-                                {/* <div className={styles.backbtn}>
-                                    <Link href="/"><Image className={styles.img}src={LOGO} alt="logo" /></Link>
-                                </div> */}
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-
 
             <footer className={styles.footer}>
                 <div className={styles.container}>
@@ -122,9 +117,7 @@ export default function Home() {
                         <p className={styles.footertext}>
                             ©️ YUKI.K portfolio_ver.1
                         </p>
-
                     </div>
-
                 </div>
             </footer>
         </>

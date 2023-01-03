@@ -84,7 +84,7 @@
 .contact {
   width: 100%;
   height: 1600px;
-  padding-top: 120px;
+  padding-top: 100px;
   background-color: bisque;
 }
 .contactwrapper {
@@ -107,13 +107,11 @@
 }
 
 .container {
-  width: 90%;
+  width: 100%;
 }
 
 #form {
-  padding: 80px 0;
   margin: auto;
-  max-width: 90%;
 }
 
 .label {
@@ -127,13 +125,19 @@
 }
 
 input.formbtn, .contactname, .contactmall {
-  width: auto;
+  width: 70%;
   height: 100px;
   border: 1px solid #995f43;
   background-color: white;
 }
 
+.contactblock {
+  text-align: center;
+  padding: 30px 15% 0% 15%;
+}
+
 input.contactmessage {
+  width: 70%;
   height: 200px;
 }
 
@@ -158,23 +162,6 @@ input.formbtn {
   opacity: 1;
 }
 .formbtn:hover {
-  opacity: 0.6;
-}
-
-.backbtn {
-  text-align: right;
-}
-.backbtn a {
-  text-decoration: none;
-  color: #995f43;
-  font-size: 15px;
-  background-color: bisque;
-  padding: 20px;
-  margin-top: 100px;
-  font-weight: bold;
-  opacity: 1;
-}
-.backbtn a:hover {
   opacity: 0.6;
 }
 
