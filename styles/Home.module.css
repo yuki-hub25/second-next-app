@@ -11,12 +11,12 @@
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .headerlogo {
-  margin-left: -25px;
+  margin-left: 20px;
   margin-top: 10px;
   float: left;
   opacity: 1;
@@ -76,7 +76,8 @@
   text-align: center;
   display: inline block;
 }
-.menuall .spanborder {
+
+.spanborder {
   border-bottom: 5px dashed #995f43;
   padding-bottom: 5px;
 }
@@ -159,6 +160,9 @@
   margin-bottom: 60px;
 }
 
+.profile {
+  background-color: bisque;
+}
 .profilephoto {
   width: 20%;
   height: 50%;
@@ -180,6 +184,7 @@
 }
 
 .skills {
+  background-color: bisque;
   width: 100%;
   height: 1800px;
   text-align: center;
@@ -224,6 +229,7 @@
 }
 
 .works {
+  background-color: bisque;
   width: 100%;
   height: 2000px;
   text-align: center;
@@ -264,7 +270,7 @@
     z-index: 200;
     position: absolute;
     top: 30px;
-    right: 50px;
+    right: 30px;
   }
   .close .btn {
     color: white;
@@ -305,7 +311,7 @@
   }
   .list {
     background-color: white;
-    /* padding-top: 100px; */
+    width: 100%;
     padding-bottom: 30px;
     list-style: none;
     display: list-item;
@@ -324,8 +330,6 @@
     font-weight: bold;
     text-align: left;
     margin-top: 40px;
-    /* position: relative; */
-    /* opacity: 1; */
     position: relative;
     display: inline-block;
   }
@@ -352,21 +356,6 @@
     text-align: center;
     display: inline block;
     padding-bottom: 30px;
-  }
-  .menuall::after {
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: white;
-    transform: scale(0, 1);
-    transform-origin: left top;
-    transition: transform 2s;
-  }
-  .menuall:hover::after {
-    transform: scale(1, 1);
   }
 }
 .menuall .spanborder {
@@ -396,6 +385,9 @@
 }
 /* 中間① */
 @media (max-width: 1180px) {
+  .profiletext {
+    font-size: 14px;
+  }
   .skillsblock {
     display: block;
     height: 600px;
@@ -405,8 +397,9 @@
     border-top: none;
   }
   .skilltext {
-    padding: 20px 0 40px 10%;
+    padding: 20px 10px 40px 10%;
     border-bottom: 0.5px solid #995f43;
+    font-size: 18px;
   }
   .block {
     border-top: 0.5px solid #995f43;

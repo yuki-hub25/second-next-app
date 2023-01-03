@@ -13,14 +13,14 @@
 
 
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 
 
 .headerlogo {
-  margin-left: -25px;
+  margin-left:20px;
   margin-top: 10px;
   float: left;
   opacity: 1;
@@ -74,10 +74,6 @@
   }
 }
 
-
-
-
-
 .headermenu {
   float: right;
 
@@ -86,27 +82,18 @@
   }
 }
 
-
-
-
-
-
-
-
 .menuall {
   color: #995f43;
   font-size: 50px;
   font-weight: bold;
   text-align: center;
   display: inline block;
-
-  .spanborder {
-    border-bottom: 5px dashed #995f43;
-    padding-bottom: 5px;
-  }
 }
 
-
+.spanborder {
+  border-bottom: 5px dashed #995f43;
+  padding-bottom: 5px;
+}
 
 
 
@@ -184,6 +171,7 @@
 
 
 .profile {
+  background-color:bisque;
   &photo {
     width: 20%;
     height: 50%;
@@ -211,6 +199,7 @@
 
 
 .skills {
+  background-color:bisque;
   width: 100%;
   height: 1800px;
   text-align: center;
@@ -265,6 +254,7 @@
 }
 
 .works {
+  background-color:bisque;
   width: 100%;
   height: 2000px;
   text-align: center;
@@ -317,7 +307,7 @@
   z-index: 200;
   position: absolute;
   top:30px;
-  right:50px;
+  right:30px;
 }
 
 
@@ -336,7 +326,7 @@
   .btn{
     display: grid;
     place-items: center;
-
+  
   .srOnly{
     display: none;
   }
@@ -375,94 +365,67 @@
 
 }
 
-
-
-
-
-  .list {
-    background-color: white;
-    /* padding-top: 100px; */
-    padding-bottom: 30px;
-    list-style: none;
-    display: list-item;
-    padding: 115px 0px 60px 0px;
-    transition: 0.8s;
-    transform: translateY(-700px);
-  }
-
-  .open {
-    .list {
-      transform: translateY(0px);
-      transition: 0.8s;
-    }
-  }
-
-  .LinkMenu {
-    text-decoration: none;
-    color: #995f43;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: left;
-    margin-top: 40px;
-    /* position: relative; */
-
-    /* opacity: 1; */
-    position: relative;
-      display: inline-block;
-
-
-    &::after {
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      content: '';
-      width: 100%;
-      height: 2px;
-      background: #995f43;
-      transform: scale(0, 1);
-      transform-origin: left top;
-      transition: transform .3s;
-    }
-
-    &:hover::after {
-      transform: scale(1, 1);
-    }
-  }
-
-  .menuall {
-    width: 100%;
-    color: #995f43;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    display: inline block;
-    padding-bottom: 30px;
-
-    &::after {
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      content: '';
-      width: 100%;
-      height: 2px;
-      background: white;
-      transform: scale(0, 1);
-      transform-origin: left top;
-      transition: transform 2s;
-    }
-
-    &:hover::after {
-      transform: scale(1, 1);
-    }
-  }
+.list {
+  background-color: white;
+  width: 100%;
+  padding-bottom: 30px;
+  list-style: none;
+  display: list-item;
+  padding: 115px 0px 60px 0px;
+  transition: 0.8s;
+  transform: translateY(-700px);
 }
 
-  
+.open {
+  .list {
+   transform: translateY(0px);
+   transition: 0.8s;
+   }
+}
 
-  .menuall .spanborder {
-    border-bottom: 5px dashed #995f43;
-    padding-top: 30px;
+.LinkMenu {
+   text-decoration: none;
+   color: #995f43;
+   font-size: 25px;
+   font-weight: bold;
+   text-align: left;
+   margin-top: 40px;
+   position: relative;
+   display: inline-block;
+
+
+   &::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #995f43;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+   }
+
+   &:hover::after {
+    transform: scale(1, 1);
+    }
   }
+
+.menuall {
+   width: 100%;
+   color: #995f43;
+   font-size: 50px;
+   font-weight: bold;
+   text-align: center;
+   display: inline block;
+   padding-bottom: 30px;
+ }
+}
+ 
+.menuall .spanborder {
+   border-bottom: 5px dashed #995f43;
+   padding-top: 30px;}
 
   .LinkMenu {
     list-style: none;
@@ -489,6 +452,11 @@
 
 /* 中間① */
 @media (max-width: 1180px) {
+
+  .profiletext{
+    font-size: 14px;
+  }
+
   .skillsblock {
     display: block;
     height: 600px;
@@ -499,8 +467,9 @@
   }
 
   .skilltext {
-    padding: 20px 0 40px 10%;
+    padding: 20px 10px 40px 10%;
     border-bottom: 0.5px solid #995f43;
+    font-size: 18px;
   }
 
   .block {

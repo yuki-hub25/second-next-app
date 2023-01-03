@@ -106,9 +106,9 @@ export default function Home() {
                                     ※現在こちらのフォームは停止しております</p>
 
                                 <input className={styles.formbtn} type="submit" value="送信する" />
-                                <div className={styles.backbtn}>
-                                    <Link href="/">← Back</Link>
-                                </div>
+                                {/* <div className={styles.backbtn}>
+                                    <Link href="/"><Image className={styles.img}src={LOGO} alt="logo" /></Link>
+                                </div> */}
                             </form>
                         </div>
                     </div>

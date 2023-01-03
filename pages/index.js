@@ -96,18 +96,23 @@ export default function Home() {
 
                 </div>
             </div>
-            <div className={styles.about} id="about">
-                <div className={styles.container}>
-                    <div className={styles.profile}>
-                        <h2><span className={styles.spanborder}>ABOUT</span></h2>
-                        <Image className={styles.profilephoto} src={ABOUT} alt="profile" />
-                        <div className={styles.profiletext}>
+
+        <div className={styles.bigbrock}>    
+
+                <div className={styles.about} id="about">
+                    <div className={styles.container}>
+                        <div className={styles.profile}>
+                            <h2><span className={styles.spanborder}>ABOUT</span></h2>
+                            <Image className={styles.profilephoto} src={ABOUT} alt="profile" />
+                            <div className={styles.profiletext}>
                             <h1>YUKI.K</h1>
+                        </div>
+                        <div className={styles.profilecontents}>
                             <p>栄養系の短期大学に進学し、栄養士資格を取得。<br />
                                 趣味で通っていた料理教室にて、スタジオ運営/営業スタッフとして従事。<br /><br />
                                 現在は、広告系事務職にて<br />
                                 SNS（Facebook/Twitter/LINE）広告の、配信内容の設定/設定依頼内容の精査を主に担当。<br /><br />
-                                Webサイト作成に関わる、HTML/CSS/JavaScript/WordPressを中心に、独学で勉強中です。
+                                HTML/CSSを中心に、<br />JavaScript/WordPressを含めて独学で勉強中です。
                             </p>
                         </div>
                     </div>
@@ -222,7 +227,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
+        </div> 
 
             <footer className={styles.footer}>
                 <div className={styles.container}>
