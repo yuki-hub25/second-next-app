@@ -176,7 +176,8 @@
   padding-top: 40px;
   padding-bottom: 70px;
 }
-.profiletext p {
+
+.profilecontents p {
   width: 85%;
   font-size: 25px;
   text-align: left;
@@ -190,7 +191,6 @@
   text-align: center;
 }
 .skillswrapper {
-  padding-top: 120px;
   text-align: center;
 }
 .skillswrapper h2 {
@@ -235,12 +235,33 @@
   text-align: center;
 }
 .workswrapper {
-  padding-top: 120px;
-  text-align: center;
+  padding-top: 80px;
 }
 .workswrapper h2 {
   font-size: 50px;
   padding-bottom: 60px;
+}
+
+.workBlock {
+  font-size: 32px;
+  padding-bottom: 120px;
+}
+
+.workcontents {
+  padding-top: 30px;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.worksText {
+  font-size: 25px;
+  padding-top: 30px;
+  padding-left: 5%;
+}
+
+.workProcessContents {
+  font-size: 18px;
+  padding-left: 10%;
 }
 
 .footercontents {
@@ -260,6 +281,9 @@
   .headermenu {
     display: none;
   }
+  .profilecontents p {
+    font-size: 18px;
+  }
   .skillsblock {
     display: block;
     height: 600px;
@@ -270,105 +294,130 @@
   }
   .skilltext {
     font-size: 18px;
+    padding: 0 5%;
   }
-  .btn {
-    all: unset;
-    outline: revert;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
-    width: 42px;
-    height: 42px;
-    z-index: 200;
-    position: absolute;
-    top: 30px;
-    right: 30px;
+  .workBlock h1 {
+    font-size: 18px;
   }
-  .close .btn {
-    color: white;
+  .workBlock .worksText {
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 3%;
   }
-  .open .btn {
-    color: #995f43;
-  }
-  .btn {
-    display: grid;
-    place-items: center;
-  }
-  .btn .srOnly {
-    display: none;
-  }
-  .btn::before, .btn::after, .btn .bar {
-    grid-area: 1/1;
-    content: "";
-    display: block;
-    width: 32px;
-    height: 3.5px;
-    background-color: currentColor;
-    transition: transform 0.4s;
-  }
-  .close .btn::before {
-    transform: translateY(-8px);
-  }
-  .close .btn::after {
-    transform: translateY(8px);
-  }
-  .open .btn::before {
-    transform: rotate(45deg);
-  }
-  .open .btn::after {
-    transform: rotate(-45deg);
-  }
-  .open .btn .bar {
-    transform: scale(0);
-  }
-  .list {
-    background-color: white;
-    width: 100%;
-    padding-bottom: 30px;
-    list-style: none;
-    display: list-item;
-    padding: 115px 0px 60px 0px;
-    transition: 0.8s;
-    transform: translateY(-700px);
-  }
-  .open .list {
-    transform: translateY(0px);
-    transition: 0.8s;
-  }
-  .LinkMenu {
-    text-decoration: none;
-    color: #995f43;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: left;
-    margin-top: 40px;
-    position: relative;
-    display: inline-block;
-  }
-  .LinkMenu::after {
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: #995f43;
-    transform: scale(0, 1);
-    transform-origin: left top;
-    transition: transform 0.3s;
-  }
-  .LinkMenu:hover::after {
-    transform: scale(1, 1);
-  }
-  .menuall {
-    width: 100%;
-    color: #995f43;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    display: inline block;
-    padding-bottom: 30px;
+  .workProcessContents {
+    font-size: 14px;
   }
 }
+.btn {
+  all: unset;
+  outline: revert;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  z-index: 200;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.close .btn {
+  color: white;
+}
+
+.open .btn {
+  color: #995f43;
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+}
+.btn .srOnly {
+  display: none;
+}
+.btn::before, .btn::after, .btn .bar {
+  grid-area: 1/1;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3.5px;
+  background-color: currentColor;
+  transition: transform 0.4s;
+}
+
+.close .btn::before {
+  transform: translateY(-8px);
+}
+
+.close .btn::after {
+  transform: translateY(8px);
+}
+
+.open .btn::before {
+  transform: rotate(45deg);
+}
+
+.open .btn::after {
+  transform: rotate(-45deg);
+}
+
+.open .btn .bar {
+  transform: scale(0);
+}
+
+.list {
+  background-color: white;
+  width: 100%;
+  padding-bottom: 30px;
+  list-style: none;
+  display: list-item;
+  padding: 115px 0px 60px 0px;
+  transition: 0.8s;
+  transform: translateY(-700px);
+}
+
+.open .list {
+  transform: translateY(0px);
+  transition: 0.8s;
+}
+
+.LinkMenu {
+  text-decoration: none;
+  color: #995f43;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 40px;
+  position: relative;
+  display: inline-block;
+}
+.LinkMenu::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #995f43;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+.LinkMenu:hover::after {
+  transform: scale(1, 1);
+}
+
+.menuall {
+  width: 100%;
+  color: #995f43;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  display: inline block;
+  padding-bottom: 30px;
+}
+
 .menuall .spanborder {
   border-bottom: 5px dashed #995f43;
   padding-top: 30px;
@@ -401,9 +450,26 @@
   }
   .skilltext {
     font-size: 20px;
+    padding: 0 15%;
   }
   .skills {
     height: 3000px;
+  }
+  .workBlock {
+    font-size: 28px;
+  }
+  .worksText {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 2%;
+  }
+  .workBlock h1 {
+    font-size: 28px;
+  }
+  .workBlock .worksText {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 2%;
   }
 }
 /*# sourceMappingURL=Home.module.css.map */

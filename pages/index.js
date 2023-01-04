@@ -28,8 +28,8 @@ export default function Home() {
     return (
         <>
             <Head>
-                <meta charset="UTF-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta charSet="UTF-8" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=320, initial-scale=1.0" />
                 <title>portfolio</title>
             </Head>
@@ -171,8 +171,7 @@ export default function Home() {
                                 <p className={styles.skilltext}>
                                     <br /><br /> ※現在、独学にて勉強中です<br /><br />
                                     ▼Webサイト作成スキル<br />
-                                    　　HTML , CSS , JavaScript<br />
-                                    　　WordPress , SASS<br /><br />
+                                    　　HTML , CSS , JavaScript , WordPress , SASS<br /><br />
                                     ▼デザイン制作ソフト<br />
                                     　　Illustrator , Photoshopbr<br />
                                 </p>
@@ -186,37 +185,57 @@ export default function Home() {
                 <div className={styles.container}>
                     <div className={styles.workswrapper}>
                         <h2><span className={styles.spanborder}>WORKS</span></h2>
+                        
                         <div className={styles.workcontents}>
-                            <div className={styles.worksblock}>
-                                <h1 className={styles.workportfolio}>①本ポートフォリオ</h1>
-                                <p>
-                                    ▼HTML・CSS・SASS<br />
-                                    　　レスポンシブ対応<br />
-                                    　　モバイル表示時のハンバーガーメニューは、主にHTML・CSSで作成<br /><br />
-                                    ▼JavaScript <br />
-                                    　　モバイル表示時のハンバーガーメニューのうち、一部分導入<br /><br />
+                            <div className={styles.workBlock}>
+                                <h1>＜本ポートフォリオ＞</h1>
 
+                                <p className={styles.worksText}>
+                                    ▼作成過程<br /><br />
+                                    　①HTML・CSSで骨組みを作成<br /><br />
+                                </p>
+                                    
+                                <p className={styles.workProcessContents}>
+                                    ・Linkタグにマウスオンした際のアニメーションを実装<br />
+                                    ・レスポンシブデザインの実装<br />
+                                    ・ハンバーガーメニューの実装（NextJS）<br /> <br />
+                                </p>
+
+                                <p className={styles.worksText}>
+                                    　②JSX記法へ更新し、NextJSを用いてReactを使用<br /><br />
+                                    　③versel社のホスティングサービスを使用して、公開<br /><br />
                                 </p>
                             </div>
+                            
 
-                            <div className={styles.worksblock}>
-                                <h1 className={styles.workcopycoding}>②見本サイトの模写コーディング</h1>
-                                <p>以下URLより、Gitページにてご確認ください。</p>
-                                {/* <!-- 別サイトのURLを添付時に以下記載 */}
-                                <a href="ここにリンク先のURLを入れる" target="_blank" rel="noopener noreferrer">githubのここにリンク先のURLを入れる</a>
+                            <div className={styles.workBlock}>
+                                <h1>＜サイトの模写コーディング＞</h1>
 
-
-                            </div>
-
-                            <div className={styles.worksblock}>
-                                <h1 className={styles.workIllustrator}>③バナーの模写（Illustrator）</h1>
-
+                                <p className={styles.worksText}>
+                                    以下のURLより、コーディングソースをご確認ください。<br /><br />
+                                    {/* <!-- 別サイトのURLを添付時に以下記載 */}
+                                    <a href="https://github.com/yuki-hub25/portfolio-1" target="_blank" rel="noopener noreferrer">→HTML記述バージョンgithubリンク</a>
+                                </p>
 
                             </div>
 
-                            <div className={styles.worksblock}>
-                                <h1 className={styles.workPhotoshop}>④バナーの模写（Photoshop）</h1>
+                            <div className={styles.workBlock}>
+                                <h1>＜ロゴの作成（Illustrator）＞</h1>
 
+                                <p className={styles.worksText}>
+                                    以下のロゴは、Illustratorで作成いたしました。
+                                    {/* <!-- ロゴをペースト */}
+                                </p>
+
+                            </div>
+
+                            <div className={styles.workBlock}>
+                                <h1>＜バナーの模写（Photoshop）＞</h1>
+
+                                <p className={styles.worksText}>
+                                    以下のバナーは、既存のバナーをPhotoshopで模写し、作成いたしました。<br />
+                                    {/* <!-- バナーをペースト */}
+                                </p>
 
                             </div>
                         </div>

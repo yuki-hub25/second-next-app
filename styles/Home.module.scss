@@ -176,7 +176,10 @@
       padding-top: 40px;
       padding-bottom: 70px;
     }
+  }
+}
 
+.profilecontents{
     p {
       width: 85%;
       font-size: 25px;
@@ -184,7 +187,6 @@
       display: inline-block;
     }
   }
-}
 
 .skills {
   background-color:bisque;
@@ -193,7 +195,6 @@
   text-align: center;
 
   &wrapper {
-    padding-top: 120px;
     text-align: center;
 
     h2 {
@@ -246,14 +247,35 @@
   text-align: center;
 
   &wrapper {
-    padding-top: 120px;
-    text-align: center;
+    padding-top: 80px;
 
     h2 {
       font-size: 50px;
       padding-bottom: 60px;
     }
   }
+}
+
+.workBlock{
+  font-size: 32px;
+  padding-bottom: 120px;
+}
+
+.workcontents{
+  padding-top: 30px;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.worksText{
+  font-size: 25px;
+  padding-top: 30px;
+  padding-left: 5%;
+}
+
+.workProcessContents{
+  font-size: 18px;
+  padding-left: 10%;
 }
 
 .footercontents {
@@ -273,7 +295,12 @@
   .headermenu {
     display: none;
   }
-
+  .profilecontents{
+    p {
+      font-size: 18px;
+    }
+  }
+  
   .skillsblock {
     display: block;
     height: 600px;
@@ -282,10 +309,32 @@
     border-bottom: 0.5px solid #995f43;
     border-top: 0.5px solid #995f43;
   }
-
+  
   .skilltext {
     font-size: 18px;
+    padding: 0 5%;
   }
+  
+  
+  .workBlock{
+    h1{
+      font-size: 18px;
+    }
+    
+    .worksText{
+      font-size: 16px;
+      padding-top: 30px;
+      padding-left: 3%;
+    }
+  }
+  .workProcessContents{
+    font-size: 14px;
+  }
+
+} 
+
+
+
 
   // ーーハンバーガーネオーー
 .btn{
@@ -409,7 +458,7 @@
    display: inline block;
    padding-bottom: 30px;
  }
-}
+
  
 .menuall .spanborder {
    border-bottom: 5px dashed #995f43;
@@ -444,11 +493,34 @@
 
   .skilltext {
     font-size: 20px;
+    padding: 0 15%;
   }
 
   .skills {
     height: 3000px;
   }
+  .workBlock{
+    font-size: 28px;
+  }
+  
+  .worksText{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 2%;
+  }
+
+  .workBlock{
+    h1{
+      font-size: 28px;
+    }
+    
+    .worksText{
+      font-size: 20px;
+      padding-top: 30px;
+      padding-left: 2%;
+    }
+  }
 }
+
 
 /*# sourceMappingURL=Home.module.css.map */
