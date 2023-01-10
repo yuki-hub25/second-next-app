@@ -243,7 +243,7 @@
 .works {
   background-color:bisque;
   width: 100%;
-  height: 2000px;
+  height: 2700px;
   text-align: center;
 
   &wrapper {
@@ -262,20 +262,34 @@
 }
 
 .workcontents{
-  padding-top: 30px;
+  padding: 30px 10% 0 10%;
   text-align: left;
-  padding-left: 10%;
 }
 
 .worksText{
   font-size: 25px;
-  padding-top: 30px;
-  padding-left: 5%;
+  padding: 30px 5% 0px 5%;
 }
 
 .workProcessContents{
   font-size: 18px;
-  padding-left: 10%;
+  padding: 0px 7%;
+}
+
+.illust{
+  justify-content: center;
+  display: flex;
+  &logo{
+    padding: 80px 5% 20px 5%;
+    width: 15%;
+    height: auto;
+  }
+}
+
+.Photoshopbanner{
+  padding: 20px 10% ;
+  width: 50%;
+  height: auto;
 }
 
 .footercontents {
@@ -315,7 +329,11 @@
     padding: 0 5%;
   }
   
-  
+.works{
+  height: 4000px;
+}
+
+
   .workBlock{
     h1{
       font-size: 18px;
@@ -323,15 +341,25 @@
     
     .worksText{
       font-size: 16px;
-      padding-top: 30px;
-      padding-left: 3%;
+      padding: 30px 3% 30px 3%;
+    }
+    .illust{
+      display: block;
+      &logo{
+        padding: 40px 20% 20px 20%;
+        width: 60%;
+        height: auto;
+        display: block;
+      }
     }
   }
+
   .workProcessContents{
     font-size: 14px;
   }
 
 } 
+
 
 
 
@@ -505,8 +533,7 @@
   
   .worksText{
     font-size: 20px;
-    padding-top: 30px;
-    padding-left: 2%;
+    padding: 30px 2%;
   }
 
   .workBlock{
@@ -516,8 +543,7 @@
     
     .worksText{
       font-size: 20px;
-      padding-top: 30px;
-      padding-left: 2%;
+      padding: 30px 2%;
     }
   }
 }
