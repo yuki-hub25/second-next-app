@@ -231,7 +231,7 @@
 .works {
   background-color: bisque;
   width: 100%;
-  height: 2700px;
+  height: 3100px;
   text-align: center;
 }
 .workswrapper {
@@ -272,9 +272,14 @@
   height: auto;
 }
 
-.Photoshopbanner {
-  padding: 20px 10%;
-  width: 50%;
+.Photoshopbanner1 {
+  padding: 80px 15%;
+  width: 70%;
+  height: auto;
+}
+.Photoshopbanner2 {
+  padding: 60px 15%;
+  width: 70%;
   height: auto;
 }
 
@@ -298,6 +303,9 @@
   .profilecontents p {
     font-size: 18px;
   }
+  .skills {
+    height: 1500px;
+  }
   .skillsblock {
     display: block;
     height: 600px;
@@ -311,7 +319,7 @@
     padding: 0 5%;
   }
   .works {
-    height: 4000px;
+    height: 2700px;
   }
   .workBlock h1 {
     font-size: 18px;
@@ -331,6 +339,16 @@
   }
   .workProcessContents {
     font-size: 14px;
+  }
+  .Photoshopbanner1 {
+    padding: 50px 10%;
+    width: 80%;
+    height: auto;
+  }
+  .Photoshopbanner2 {
+    padding: 40px 10%;
+    width: 80%;
+    height: auto;
   }
 }
 .btn {
@@ -478,7 +496,13 @@
     padding: 0 15%;
   }
   .skills {
-    height: 3000px;
+    height: 2900px;
+  }
+  .skillsblock {
+    height: 600px;
+  }
+  .works {
+    height: 4300px;
   }
   .workBlock {
     font-size: 28px;

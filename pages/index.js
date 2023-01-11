@@ -9,6 +9,7 @@ import SKILLS2 from '../public/image-3.png'
 import SKILLS3 from '../public/image-4.png'
 import SKILLS4 from '../public/image-5.png'
 import PHOTOSHOP1 from '../public/Photoshop-study-1.png'
+import PHOTOSHOP2 from '../public/Photoshop-study-2.png'
 
 import Link from 'next/link'
 import { useState } from 'react'
@@ -245,7 +246,8 @@ export default function Home() {
                                 </p>
 
                                 <div className={styles.Photoshop}>
-                                    <Image className={styles.Photoshopbanner} src={PHOTOSHOP1} alt="logo-6" />
+                                    <Image className={styles.Photoshopbanner1} src={PHOTOSHOP1} alt="banner1" />
+                                    <Image className={styles.Photoshopbanner2} src={PHOTOSHOP2} alt="banner2" />
                                 </div>
                             </div>
 

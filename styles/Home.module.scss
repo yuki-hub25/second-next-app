@@ -243,7 +243,7 @@
 .works {
   background-color:bisque;
   width: 100%;
-  height: 2700px;
+  height: 3100px;
   text-align: center;
 
   &wrapper {
@@ -287,9 +287,18 @@
 }
 
 .Photoshopbanner{
-  padding: 20px 10% ;
-  width: 50%;
+  &1{
+  padding: 80px 15% ;
+  width: 70%;
   height: auto;
+  }
+
+&2{
+  padding: 60px 15% ;
+  width: 70%;
+  height: auto;
+  }
+
 }
 
 .footercontents {
@@ -314,8 +323,11 @@
       font-size: 18px;
     }
   }
+
+  .skills{
+    height: 1500px;
   
-  .skillsblock {
+  &block {
     display: block;
     height: 600px;
     text-align: center;
@@ -323,6 +335,7 @@
     border-bottom: 0.5px solid #995f43;
     border-top: 0.5px solid #995f43;
   }
+}
   
   .skilltext {
     font-size: 18px;
@@ -330,7 +343,7 @@
   }
   
 .works{
-  height: 4000px;
+  height: 2700px;
 }
 
 
@@ -356,6 +369,20 @@
 
   .workProcessContents{
     font-size: 14px;
+  }
+
+  .Photoshopbanner{
+    &1{
+    padding: 50px 10% ;
+    width: 80%;
+    height: auto;
+    }
+  
+  &2{
+    padding: 40px 10% ;
+    width: 80%;
+    height: auto;
+    }
   }
 
 } 
@@ -525,8 +552,17 @@
   }
 
   .skills {
-    height: 3000px;
+    height: 2900px;
+
+    &block{
+      height: 600px;
+    }
   }
+
+  .works{
+    height: 4300px;
+  }
+
   .workBlock{
     font-size: 28px;
   }
