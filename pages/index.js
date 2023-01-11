@@ -174,7 +174,7 @@ export default function Home() {
                                 <p className={styles.skilltext}>
                                     <br /><br /> ※現在、独学にて勉強中です<br /><br />
                                     ▼Webサイト作成スキル<br />
-                                    HTML , CSS , SASS , JavaScript , React(NextJS) , WordPress<br /><br />
+                                    HTML , CSS , SASS , JavaScript , React(NextJS)<br /><br />
                                     ▼デザイン制作ソフト<br />
                                     Illustrator , Photoshopbr<br />
                                 </p>
