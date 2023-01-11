@@ -174,7 +174,7 @@ export default function Home() {
                                 <p className={styles.skilltext}>
                                     <br /><br /> ※現在、独学にて勉強中です<br /><br />
                                     ▼Webサイト作成スキル<br />
-                                    HTML , CSS , JavaScript , WordPress , SASS<br /><br />
+                                    HTML , CSS , SASS , JavaScript , React(NextJS) , WordPress<br /><br />
                                     ▼デザイン制作ソフト<br />
                                     Illustrator , Photoshopbr<br />
                                 </p>
@@ -217,7 +217,7 @@ export default function Home() {
                                 <p className={styles.worksText}>
                                     以下のURLより、コーディングソースをご確認ください。<br /><br />
                                     {/* <!-- 別サイトのURLを添付時に以下記載 */}
-                                    <a href="https://github.com/yuki-hub25/portfolio-1" target="_blank" rel="noopener noreferrer">→HTML記述バージョンgithubリンク</a>
+                                    <a href="https://github.com/yuki-hub25/portfolio-1" target="_blank" rel="noopener noreferrer">→ JSX記法へ更新前の、本ポートフォリオ（githubへ遷移します）</a>
                                 </p>
 
                             </div>
