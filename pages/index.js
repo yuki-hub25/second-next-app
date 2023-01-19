@@ -110,7 +110,7 @@ export default function Home() {
                         <div className={styles.profilecontents}>
                             <p>栄養系の短期大学に進学し、栄養士資格を取得。<br />
                                 趣味で通っていた料理教室にて、スタジオ運営/営業スタッフとして従事。<br /><br />
-                                現在は、広告系事務職にて<br />
+                                その後、広告系事務職にて<br />
                                 SNS（Facebook/Twitter/LINE）広告の、配信内容の設定/設定依頼内容の精査を主に担当。<br /><br />
                                 HTML/CSSを中心に、<br />JavaScript/WordPressを含めて独学で勉強中です。
                             </p>
@@ -217,7 +217,7 @@ export default function Home() {
                                 <p className={styles.worksText}>
                                     以下のURLより、コーディングソースをご確認ください。<br /><br />
                                     {/* <!-- 別サイトのURLを添付時に以下記載 */}
-                                    <a href="https://github.com/yuki-hub25/portfolio-1" target="_blank" rel="noopener noreferrer">→ JSX記法へ更新前の、本ポートフォリオ（githubへ遷移します）</a>
+                                    <a href="https://github.com/yuki-hub25/portfolio-1" target="_blank" rel="noopener noreferrer">→ JSX記法へ更新前の本ポートフォリオ（githubへ遷移します）</a>
                                 </p>
 
                             </div>
